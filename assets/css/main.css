@@ -751,7 +751,7 @@ body.landing.is-preload:after {
 img.btn-whatsapp {
   display: block !important;
   position: fixed;
-  z-index: 9999999;
+  z-index: 22;
   bottom: 20px;
   right: 20px;
   cursor: pointer;
@@ -3839,7 +3839,7 @@ body.is-touch #banner {
 
 @media screen and (max-width: 980px) {
   /* Basic */
-  .lb-nav a.lb-next{
+  .lb-nav a.lb-next, .lb-nav a.lb-prev{
     opacity: 1 !important;
   }
   body,
