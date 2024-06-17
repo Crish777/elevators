@@ -744,6 +744,20 @@ body.landing.is-preload:after {
   }
 }
 
+.row-mb {
+  margin-bottom: 20px;
+}
+
+img.btn-whatsapp {
+  display: block !important;
+  position: fixed;
+  z-index: 9999999;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 100px !important;
+}
+
 /* Container */
 
 .container {
@@ -2320,6 +2334,7 @@ label {
 }
 
 input[type="text"],
+input[type="tel"],
 input[type="password"],
 input[type="email"],
 select,
@@ -2346,12 +2361,14 @@ textarea {
 input[type="text"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
+input[type="tel"]:invalid,
 select:invalid,
 textarea:invalid {
   box-shadow: none;
 }
 
 input[type="text"]:focus,
+input[type="tel"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 select:focus,
@@ -2383,6 +2400,7 @@ select::-ms-expand {
 }
 
 input[type="text"],
+input[type="tel"],
 input[type="password"],
 input[type="email"],
 select {
@@ -3091,6 +3109,7 @@ input[type="button"]:disabled,
 
 .spotlight:nth-last-of-type(2) {
   z-index: 2;
+  background-position: center 35% !important;
 }
 
 .spotlight:nth-last-of-type(3) {
@@ -3504,6 +3523,7 @@ body.landing .dropotron.level-0 {
   top: 0;
   width: 100%;
   z-index: 100;
+
 }
 
 #header h1 {
@@ -3568,7 +3588,13 @@ body.landing #page-wrapper {
 body.landing #header {
   background: transparent;
   box-shadow: none;
-  position: absolute;
+  /* position: absolute; */
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(23, 24, 32, 0.95),
+    rgba(23, 24, 32, 0.95)
+  ),
+  url("images/overlay.png");
 }
 
 /* Banner */
@@ -3670,7 +3696,7 @@ body.landing #header {
   height: 100%;
   width: 100%;
   object-position: center bottom;
-    object-fit: cover;
+  object-fit: cover;
 }
 
 body.is-touch #banner {
