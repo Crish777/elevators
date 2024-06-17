@@ -3523,7 +3523,6 @@ body.landing .dropotron.level-0 {
   top: 0;
   width: 100%;
   z-index: 100;
-
 }
 
 #header h1 {
@@ -3590,15 +3589,19 @@ body.landing #header {
   box-shadow: none;
   /* position: absolute; */
   background-image: -webkit-linear-gradient(
-    top,
-    rgba(23, 24, 32, 0.95),
-    rgba(23, 24, 32, 0.95)
-  ),
-  url("images/overlay.png");
+      top,
+      rgba(23, 24, 32, 0.95),
+      rgba(23, 24, 32, 0.95)
+    ),
+    url("images/overlay.png");
 }
 
-body{
+body {
   overflow-x: hidden;
+}
+
+html:has(body.lb-disable-scrolling){
+  overflow: hidden;
 }
 
 /* Banner */
