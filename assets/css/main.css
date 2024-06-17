@@ -3839,7 +3839,9 @@ body.is-touch #banner {
 
 @media screen and (max-width: 980px) {
   /* Basic */
-
+  .lb-nav a.lb-next{
+    opacity: 1 !important;
+  }
   body,
   input,
   select,
