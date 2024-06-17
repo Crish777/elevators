@@ -3597,6 +3597,10 @@ body.landing #header {
   url("images/overlay.png");
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /* Banner */
 
 #banner {
