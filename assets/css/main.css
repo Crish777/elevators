@@ -3216,10 +3216,18 @@ input[type="button"]:disabled,
   -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
   -ms-transition: -ms-transform 1s ease, opacity 1s ease;
   transition: transform 1s ease, opacity 1s ease;
-  background: rgba(23, 24, 32, 0.95);
+  background: rgb(23 24 32 / 61%);
   border-style: solid;
   opacity: 1;
   position: absolute;
+}
+
+.aboutButton{
+  margin-bottom: 20px;
+}
+
+.serviceButton{
+  margin-left: 20px;
 }
 
 .spotlight .goto-next {
@@ -3275,6 +3283,11 @@ input[type="button"]:disabled,
 
 .spotlight.style1 .content {
   border-color: #e44c65;
+  text-align: center;
+}
+
+.spotlight.style1 .content .container {
+  text-align: left;
 }
 
 .spotlight.style2 .content {
@@ -3600,7 +3613,7 @@ body {
   overflow-x: hidden;
 }
 
-html:has(body.lb-disable-scrolling){
+html:has(body.lb-disable-scrolling) {
   overflow: hidden;
 }
 
@@ -3683,7 +3696,7 @@ html:has(body.lb-disable-scrolling){
 }
 
 #banner .content header p {
-  margin: 0.5em 0 0 0;
+  margin: 0.5em 0;
   top: 0;
 }
 
@@ -3839,7 +3852,8 @@ body.is-touch #banner {
 
 @media screen and (max-width: 980px) {
   /* Basic */
-  .lb-nav a.lb-next, .lb-nav a.lb-prev{
+  .lb-nav a.lb-next,
+  .lb-nav a.lb-prev {
     opacity: 1 !important;
   }
   body,
